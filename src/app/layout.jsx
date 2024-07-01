@@ -1,5 +1,12 @@
-import '@/styles/globals.css'
+import '@styles/globals.css';
 
+import Nav from '@components/Nav';
+
+export const metadata = {
+  title: 'PromptCraft',
+  description: 'Discover & Share AI Prompts'
+}
+  
 const RootLayout = ({ children }) => {
   return (
     <html>
@@ -10,6 +17,7 @@ const RootLayout = ({ children }) => {
         </div>
 
         <main className='app'>
+          <Nav />
           {children}
         </main>
 
